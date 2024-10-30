@@ -1,0 +1,21 @@
+<app-header></app-header>
+<div class="content">
+  <mat-tab-group>
+    <mat-tab label="Fondos disponibles">
+      <ng-template matTabContent>
+        <app-funds></app-funds>
+      </ng-template>
+    </mat-tab>
+    <mat-tab label="Mis suscripciones">
+      <ng-template matTabContent>
+        <app-funds-user></app-funds-user>
+      </ng-template>
+    </mat-tab>
+    <mat-tab label="Historial">
+      <ng-template matTabContent>
+        <app-history-funds-user></app-history-funds-user>
+      </ng-template>
+    </mat-tab>
+  </mat-tab-group>
+</div>
+<app-footer></app-footer>

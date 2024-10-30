@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="card-fund" *ngFor="let funds of data">
+      <div class="header-card-fund">
+        <label class="title-card-fund">{{funds.name}}</label>
+      </div>
+      <div class="body-card-fund">
+        <p class="price-fund"><span class="dark-text">Monto minimo: </span>{{funds.minumSubscription | currency:'COP':'symbol':'1.2-2'}}</p>
+        <p class="type-fund">Categoria: {{funds.category}}</p>
+      </div>
+
+      <div class="footer-card-fund">
+        <button class="btn-subscribe" (click)="openEmailValidationDialog(funds.id)">Suscribirse</button>
+      </div>
+    </div>
+  </div>
+</div>

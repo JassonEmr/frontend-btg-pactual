@@ -1,0 +1,28 @@
+<div class="container">
+  <h2>Mis suscripciones</h2>
+  <form (ngSubmit)="getFundsByUser()" class="form-box-email">
+    <mat-form-field appearance="fill">
+      <mat-label>Correo Electrónico</mat-label>
+      <input matInput [(ngModel)]="email" name="email" required class="email-input" />
+    </mat-form-field>
+    <button mat-raised-button type="submit" class="btn-validate-email">Buscar mis fondos</button>
+  </form>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="card-fund" *ngFor="let fund of funds">
+      <div class="header-card-fund">
+        <label class="title-card-fund">{{fund.name}}</label>
+      </div>
+      <div class="body-card-fund">
+        <p class="price-fund"><span class="dark-text">Monto minimo: </span>{{fund.minumSubscription | currency:'COP':'symbol':'1.2-2'}}</p>
+        <p class="type-fund">Categoria: {{fund.category}}</p>
+      </div>
+
+      <div class="footer-card-fund">
+        <button class="btn-subscribe" (click)="cancelSubs(fund.id)">cancelar suscripcion</button>
+      </div>
+    </div>
+  </div>
+</div>

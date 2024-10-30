@@ -1,0 +1,23 @@
+.container {
+  padding-inline-start: 21px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.form-box-email {
+  display: inline;
+}
+
+.box-transactions {
+  padding: 25px;
+}
+
+.btn-validate-email {
+  width: 19%;
+  margin-inline-start: 14px;
+  margin-block-end: 15px;
+}
+
+.email-input {
+
+}

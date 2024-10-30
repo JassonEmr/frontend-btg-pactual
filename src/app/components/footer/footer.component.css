@@ -1,0 +1,10 @@
+.footer {
+  position: sticky;
+  /* Mantiene el footer en la parte inferior del viewport */
+  bottom: 0;
+  width: 100%;
+  /* Asegúrate de que el footer ocupe todo el ancho */
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}

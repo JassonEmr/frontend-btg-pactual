@@ -1,0 +1,21 @@
+<h1 mat-dialog-title>Registro</h1>
+<div mat-dialog-content>
+  <form (ngSubmit)="onRegister()" class="form-style">
+    <mat-form-field appearance="fill">
+      <mat-label>Nombre</mat-label>
+      <input matInput [(ngModel)]="user.name" name="name" placeholder="Ingresa tu nombre" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Correo</mat-label>
+      <input matInput [(ngModel)]="user.email" name="email" placeholder="Ingresa tu email" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Telefono</mat-label>
+      <input matInput [(ngModel)]="user.phone" name="phone" placeholder="Ingresa tu numero de telefono" required>
+    </mat-form-field>
+    <button mat-flat-button type="submit">Crear cuenta</button>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cerrar</button>
+</div>

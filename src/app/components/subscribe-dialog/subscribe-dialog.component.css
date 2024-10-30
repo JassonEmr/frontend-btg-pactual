@@ -1,0 +1,32 @@
+.container {
+  width: 800px;
+  height: 346px;
+  padding: 16px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-info-user-fund {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box-left {
+  margin-inline-end: 33px;
+    background: beige;
+    padding: 19px;
+    border-radius: 11px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.box-right {
+  background: antiquewhite;
+  padding: 19px;
+  border-radius: 11px;
+  font-family: sans-serif;
+  font-size: 12px;
+}

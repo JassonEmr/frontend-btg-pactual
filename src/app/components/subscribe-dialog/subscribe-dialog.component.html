@@ -1,0 +1,30 @@
+<div class="container">
+  <h2>Suscribirse al fondo</h2>
+  <div class="box-info-user-fund">
+    <div class="box-left">
+      <ng-container *ngIf="user">
+        <h2>Información del Usuario</h2>
+        <p><strong>Nombre:</strong> {{ user.name }}</p>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+        <p><strong>Teléfono:</strong> {{ user.phone }}</p>
+        <p><strong>Saldo actual: </strong>{{user.balance | currency}}</p>
+      </ng-container>
+    </div>
+
+    <div class="box-right">
+      <ng-container *ngIf="fund">
+        <h2>Detalles del Fondo</h2>
+        <p><strong>Nombre del Fondo:</strong> {{ fund.name }}</p>
+        <p><strong>Monto basico para Suscribirse:</strong> {{ fund.minumSubscription | currency }}</p>
+      </ng-container>
+
+      <div *ngIf="user?.balance < fund.minumSubscription" style="color: red;">
+        <p>No tiene saldo suficiente para suscribirse.</p>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="user?.balance > fund.minumSubscription">
+    <button mat-button (click)="subscribe()">Confirmar Suscripción</button>
+  </div>
+
+  <button mat-button (click)="closeDialog()">Cerrar</button>

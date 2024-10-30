@@ -1,0 +1,101 @@
+.container {
+  padding: 30px;
+}
+
+.example-card {
+  flex: 1 1 calc(33.33% - 16px);
+  /* Ajusta el tamaño de las tarjetas, restando el margen */
+  margin: 8px;
+  /* Margen entre tarjetas */
+  margin-inline-end: 16px;
+  /* Añade margen al final de cada tarjeta */
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card-fund {
+  flex: 0 0 calc(33.333% - 20px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 17px;
+  text-align: start;
+  background: ghostwhite;
+}
+
+.header-card-fund {
+  width: 100%;
+  text-align: left;
+}
+
+.body-card-fund {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-card-fund {
+  width: 100%;
+  text-align: left;
+}
+
+.title-card-fund {
+  font-size: 24px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: gray;
+}
+
+.price-fund {
+  font-size: 19px;
+  color: green;
+  font-weight: 700;
+  font-family: monospace;
+  margin: 0;
+}
+
+.type-fund {
+  color: black;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+.btn-subscribe {
+  width: 27%;
+  padding: 6px;
+  border-radius: 18px;
+  border: 1px solid deepskyblue;
+  background: lightblue;
+  margin-block-start: 10px;
+  font-size: 12px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  max-width: 27%;
+  min-width: 27px;
+}
+
+.dark-text {
+  color: black;
+  font-weight: 300;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+
+@media (max-width: 768px) {
+  .row {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .row {
+    grid-template-columns: 1fr; /* 1 columna en pantallas muy pequeñas */
+  }
+}

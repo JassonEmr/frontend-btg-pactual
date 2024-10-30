@@ -1,0 +1,30 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.btn-login {
+  width: 8%;
+  padding: 9px;
+  border-radius: 21px;
+  background: cornflowerblue;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  margin-inline-end: 10px;
+}
+
+.btn-register {
+  width: 15%;
+    padding: 9px;
+    border-radius: 21px;
+    background: cadetblue;
+    border: 1px solid cadetblue;
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-inline-end: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
