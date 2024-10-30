@@ -9,7 +9,7 @@ import { Fund } from '../models/fund';
 })
 export class FundService {
 
-  private baseUrl = "http://localhost:8080/api";
+  private baseUrl = "http://3.16.168.10:8080/api";
 
   constructor(private http: HttpClient) { }
 
